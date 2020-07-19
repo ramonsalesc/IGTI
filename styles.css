@@ -1,9 +1,53 @@
-.container {
-  width: 30%;
-  margin: 0px auto;
+* {
+  margin: 0px;
+}
+body {
+  background-color: rgb(176, 180, 206);
 }
 
-.container > div {
-  width: 300px;
-  line-height: 30px;
+#titulo {
+  text-align: center;
+  background-image: linear-gradient(
+    rgb(53, 53, 77),
+    rgb(19, 15, 15),
+    rgb(53, 53, 77)
+  );
+  line-height: 60px;
+  color: rgb(144, 157, 170);
+  width: 100%;
+}
+.container {
+  min-width: 600px;
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+span {
+  width: 100px;
+  display: inline-block;
+  text-align: left;
+}
+
+input {
+  width: 150px;
+  margin-left: 40px;
+  text-align: center;
+  background-color: rgb(204, 221, 226);
+}
+#box {
+  width: 200px;
+  height: 200px;
+  margin: 0px auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.77);
+}
+
+#rodape > span {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 40px;
+  color: rgb(144, 157, 170);
+  width: 100%;
+  background-image: linear-gradient(rgb(53, 53, 77), rgb(19, 15, 15));
 }

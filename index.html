@@ -6,51 +6,83 @@
     <title>DESAFIO 01</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="javas.js"></script>
   </head>
   <body>
+    <header id="titulo">
+      <h1>
+        GERADOR DE CORES RGB
+      </h1>
+    </header>
     <section class="container">
+      <!--Inicio da sessão dos seletores das cores -->
       <div>
-        <p>BLUE</p>
+        <!-- Inicio da Div do range da cor vermelha-->
+        <span style="color: red;"> (R) Vermelho: </span>
         <input
           type="range"
-          id="range1"
+          id="rangeR"
           min="0"
           max="255"
           value="0"
           name="cor"
         />
+        <input type="text" id="txtrangeR" readonly />
       </div>
+      <!-- Fim da Div do range da cor vermelha-->
 
       <br />
 
       <div>
-        <p>GREEN</p>
+        <!-- Inicio da Div do range da cor verde-->
+        <span style="color: green;"> (G) Verde: </span
+        ><!--Div -->
         <input
           type="range"
-          id="range2"
+          id="rangeG"
           min="0"
           max="255"
           value="0"
           name="cor"
         />
+        <input type="text" id="txtrangeG" readonly />
       </div>
+      <!-- Fim da Div do range da cor verde-->
 
       <br />
 
       <div>
-        <p>RED</p>
+        <!-- Início da Div do range da cor azul-->
+        <span style="color: blue;"> (B) Azul: </span>
         <input
           type="range"
-          id="range3"
+          id="rangeB"
           min="0"
           max="255"
           value="0"
           name="cor"
         />
+        <input type="text" id="txtrangeB" readonly />
       </div>
+      <!-- Fim da Div do range da cor azul-->
     </section>
+    <!-- Fim da sessão dos seletores das cores-->
+
+    <section>
+      <!--Início da sessão da caixa de cores-->
+      <br />
+
+      <div id="box"></div>
+
+      <br />
+    </section>
+    <!--Fim da sessão da caixa de cores-->
 
     <br />
+
+    <footer id="rodape">
+      <span> &reg; Todos os direitos reservados</span>
+    </footer>
+
+    <script type="text/javascript" src="javas.js"></script>
   </body>
 </html>
